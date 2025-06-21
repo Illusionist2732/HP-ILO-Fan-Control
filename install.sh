@@ -23,7 +23,7 @@ if [[ ${ACCEPTED,,} =~ ^[y] ]]; then
     mv autofan.service /etc/systemd/system/
     echo -e "\e[92m autofan service created\e[0m"
 
-    read -rep $'Which server are you running? (Enter 1-4)
+    read -rep $'Which server are you running? (Enter 1-5)
     1. DL360p G8 (No ESXi)
     2. DL380p G8 (no ESXi)
     3. DL360p G8 (ESXi-based)
