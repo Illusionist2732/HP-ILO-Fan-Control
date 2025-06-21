@@ -27,7 +27,8 @@ if [[ ${ACCEPTED,,} =~ ^[y] ]]; then
     1. DL360p G8 (No ESXi)
     2. DL380p G8 (no ESXi)
     3. DL360p G8 (ESXi-based)
-    4. DL380p G8 (ESXi-based)\n' HOSTCHOICE
+    4. DL380p G8 (ESXi-based)
+    5. ML350 G9 (No ESXi)\n' HOSTCHOICE
 
     case $HOSTCHOICE in
     1)
@@ -48,6 +49,11 @@ if [[ ${ACCEPTED,,} =~ ^[y] ]]; then
     4)
         AUTOFANFILE="autofan-dl380p-g8-EXSI.sh"
         HOSTTYPE="DL370p G8 (ESXi-based)"
+        ;;
+
+    5)
+        AUTOFANFILE="autofan-ml350-g9.sh"
+        HOSTTYPE="ML350 G9 (No ESXi)"
         ;;
 
     *)
