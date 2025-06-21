@@ -65,7 +65,8 @@ if [[ ${ACCEPTED,,} =~ ^[y] ]]; then
 
     echo "Preping autofan.sh for $HOSTTYPE"
     echo "Downloading latest autofan.sh"
-    wget -q https://raw.githubusercontent.com/That-Guy-Jack/HP-ILO-Fan-Control/main/Files/$AUTOFANFILE -O autofan.sh
+    wget -q https://github.com/Illusionist2732/HP-ILO-Fan-Control-ML350/main/Files/$AUTOFANFILE -O autofan.sh
+    #wget -q https://raw.githubusercontent.com/That-Guy-Jack/HP-ILO-Fan-Control/main/Files/$AUTOFANFILE -O autofan.sh
 
     read -rep 'Enter iLO Username: ' ILOUSERNAME
     read -rep 'Enter iLO Password: ' ILOPASSWORD
