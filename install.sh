@@ -23,7 +23,7 @@ if [[ ${ACCEPTED,,} =~ ^[y] ]]; then
     mv autofan.service /etc/systemd/system/
     echo -e "\e[92m autofan service created\e[0m"
 
-    read -rep $'Which server are you running? (Enter 1-5)
+    read -rep $'Which server are you running? (Enter 1- 5)
     1. DL360p G8 (No ESXi)
     2. DL380p G8 (no ESXi)
     3. DL360p G8 (ESXi-based)
@@ -65,7 +65,7 @@ if [[ ${ACCEPTED,,} =~ ^[y] ]]; then
 
     echo "Preping autofan.sh for $HOSTTYPE"
     echo "Downloading latest autofan.sh"
-    wget -q https://github.com/Illusionist2732/HP-ILO-Fan-Control-ML350/main/Files/$AUTOFANFILE -O autofan.sh
+     wget -q https://raw.githubusercontent.com/Illusionist2732/HP-ILO-Fan-Control-ML350/main/Files/$AUTOFANFILE -O autofan.sh
     #wget -q https://raw.githubusercontent.com/That-Guy-Jack/HP-ILO-Fan-Control/main/Files/$AUTOFANFILE -O autofan.sh
 
     read -rep 'Enter iLO Username: ' ILOUSERNAME
