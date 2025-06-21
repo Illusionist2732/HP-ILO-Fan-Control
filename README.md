@@ -1,3 +1,7 @@
+###NOT ALL MY CODE. CREDIT TO THAT_GUY_JACK FOR 99% OF THIS. ###
+###INSTALL.SH IS UNTESTED FOR THE ML350 CURRENTLY. NO CLUE IF IT WORKS OR NOT###
+
+
 # HP-iLO-Fan-Control
 
 **Scripts are available for Linux and ESXi!**
